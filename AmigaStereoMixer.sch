@@ -1,0 +1,304 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Amiga Stereo Mixer"
+Date "2019-09-30"
+Rev "1.0"
+Comp "https://github.com/dschneller // @dschneller"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R2
+U 1 1 5D8D7C9D
+P 2850 2150
+F 0 "R2" V 2643 2150 50  0000 C CNN
+F 1 "10" V 2734 2150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2780 2150 50  0001 C CNN
+F 3 "~" H 2850 2150 50  0001 C CNN
+	1    2850 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D8D833E
+P 2850 1550
+F 0 "R1" V 2643 1550 50  0000 C CNN
+F 1 "10" V 2734 1550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2780 1550 50  0001 C CNN
+F 3 "~" H 2850 1550 50  0001 C CNN
+	1    2850 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D8D8623
+P 2850 2950
+F 0 "R3" V 2643 2950 50  0000 C CNN
+F 1 "10" V 2734 2950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2780 2950 50  0001 C CNN
+F 3 "~" H 2850 2950 50  0001 C CNN
+	1    2850 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D8D8947
+P 2850 3650
+F 0 "R4" V 2643 3650 50  0000 C CNN
+F 1 "10" V 2734 3650 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2780 3650 50  0001 C CNN
+F 3 "~" H 2850 3650 50  0001 C CNN
+	1    2850 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5D8EA779
+P 3950 2700
+F 0 "RV1" H 3880 2746 50  0000 R CNN
+F 1 "1k" H 3880 2655 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 3950 2700 50  0001 C CNN
+F 3 "~" H 3950 2700 50  0001 C CNN
+	1    3950 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 1550 2200 1550
+Wire Wire Line
+	3400 1550 3400 3150
+Wire Wire Line
+	3150 2950 3000 2950
+Wire Wire Line
+	2500 1550 2700 1550
+Wire Wire Line
+	2500 3650 2700 3650
+Wire Wire Line
+	2500 2150 2700 2150
+Wire Wire Line
+	3000 2150 3150 2150
+Wire Wire Line
+	3000 1550 3400 1550
+Wire Wire Line
+	2700 2950 2500 2950
+Wire Wire Line
+	3000 3650 3400 3650
+Wire Wire Line
+	3950 2300 3950 2550
+Wire Wire Line
+	3950 2300 3150 2300
+Wire Wire Line
+	3150 2150 3150 2300
+Connection ~ 3150 2300
+Wire Wire Line
+	3150 2300 3150 2950
+Wire Wire Line
+	3400 3150 3950 3150
+Wire Wire Line
+	3950 3150 3950 2850
+Wire Wire Line
+	3400 3150 3400 3650
+Wire Wire Line
+	3950 2300 4250 2300
+Connection ~ 3950 2300
+Wire Wire Line
+	3950 3150 4250 3150
+Connection ~ 3950 3150
+Wire Wire Line
+	5300 2950 5300 3100
+Wire Wire Line
+	4550 3150 4950 3150
+Wire Wire Line
+	4950 3150 4950 2850
+Wire Wire Line
+	4550 2300 4950 2300
+Wire Wire Line
+	4950 2300 4950 2550
+Wire Wire Line
+	4950 2550 5300 2550
+NoConn ~ 4100 2700
+$Comp
+L Device:C C1
+U 1 1 5D91D5E8
+P 2350 1550
+F 0 "C1" V 2098 1550 50  0000 C CNN
+F 1 "47uF" V 2189 1550 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm" H 2388 1400 50  0001 C CNN
+F 3 "~" H 2350 1550 50  0001 C CNN
+	1    2350 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D91F564
+P 2350 2150
+F 0 "C2" V 2098 2150 50  0000 C CNN
+F 1 "47uF" V 2189 2150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm" H 2388 2000 50  0001 C CNN
+F 3 "~" H 2350 2150 50  0001 C CNN
+	1    2350 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5D91FB13
+P 2350 2950
+F 0 "C3" V 2098 2950 50  0000 C CNN
+F 1 "47uF" V 2189 2950 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm" H 2388 2800 50  0001 C CNN
+F 3 "~" H 2350 2950 50  0001 C CNN
+	1    2350 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5D9202BC
+P 2350 3650
+F 0 "C4" V 2098 3650 50  0000 C CNN
+F 1 "47uF" V 2189 3650 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm" H 2388 3500 50  0001 C CNN
+F 3 "~" H 2350 3650 50  0001 C CNN
+	1    2350 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5D9267CF
+P 4400 2300
+F 0 "C5" V 4148 2300 50  0000 C CNN
+F 1 "47uF" V 4239 2300 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm" H 4438 2150 50  0001 C CNN
+F 3 "~" H 4400 2300 50  0001 C CNN
+	1    4400 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5D926E64
+P 4400 3150
+F 0 "C6" V 4148 3150 50  0000 C CNN
+F 1 "47uF" V 4239 3150 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D8.0mm_H11.5mm_P3.50mm" H 4438 3000 50  0001 C CNN
+F 3 "~" H 4400 3150 50  0001 C CNN
+	1    4400 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L SJ1-3553NG:SJ1-3553NG J5
+U 1 1 5D93DEC1
+P 5800 2750
+F 0 "J5" H 5470 2704 50  0000 R CNN
+F 1 "OUT_TRS" H 5470 2795 50  0000 R CNN
+F 2 "SJ1-3553NG:CUI_SJ1-3553NG" H 5800 2750 50  0001 L BNN
+F 3 "1.02" H 5800 2750 50  0001 L BNN
+F 4 "Manufacturer recommendation" H 5800 2750 50  0001 L BNN "Field4"
+F 5 "CUI" H 5800 2750 50  0001 L BNN "Field5"
+	1    5800 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 2850 5300 2850
+Text GLabel 4900 1000 1    50   Input ~ 0
+GND
+$Comp
+L power:GND #PWR01
+U 1 1 5D94BBE8
+P 4900 1200
+F 0 "#PWR01" H 4900 950 50  0001 C CNN
+F 1 "GND" V 4905 1072 50  0000 R CNN
+F 2 "" H 4900 1200 50  0001 C CNN
+F 3 "" H 4900 1200 50  0001 C CNN
+	1    4900 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1200 4900 1100
+Text GLabel 5300 3100 3    50   Input ~ 0
+GND
+$Comp
+L RCJ-012:RCJ-012 J1
+U 1 1 5D95135C
+P 1250 1450
+F 0 "J1" H 1343 1764 50  0000 C CNN
+F 1 "IN1_R" H 1343 1673 50  0000 C CNN
+F 2 "RCJ-012:CUI_RCJ-012" H 1250 1450 50  0001 L BNN
+F 3 "B" H 1250 1450 50  0001 L BNN
+F 4 "Manufacturer recommendations" H 1250 1450 50  0001 L BNN "Field4"
+F 5 "CUI Inc" H 1250 1450 50  0001 L BNN "Field5"
+	1    1250 1450
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 1350 2    50   Input ~ 0
+GND
+Wire Wire Line
+	1550 2150 2200 2150
+$Comp
+L RCJ-012:RCJ-012 J2
+U 1 1 5D95CBBB
+P 1250 2050
+F 0 "J2" H 1343 2364 50  0000 C CNN
+F 1 "IN1_L" H 1343 2273 50  0000 C CNN
+F 2 "RCJ-012:CUI_RCJ-012" H 1250 2050 50  0001 L BNN
+F 3 "B" H 1250 2050 50  0001 L BNN
+F 4 "Manufacturer recommendations" H 1250 2050 50  0001 L BNN "Field4"
+F 5 "CUI Inc" H 1250 2050 50  0001 L BNN "Field5"
+	1    1250 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 1950 2    50   Input ~ 0
+GND
+Wire Wire Line
+	1550 2950 2200 2950
+$Comp
+L RCJ-012:RCJ-012 J3
+U 1 1 5D9607F5
+P 1250 2850
+F 0 "J3" H 1343 3164 50  0000 C CNN
+F 1 "IN2_L" H 1343 3073 50  0000 C CNN
+F 2 "RCJ-012:CUI_RCJ-012" H 1250 2850 50  0001 L BNN
+F 3 "B" H 1250 2850 50  0001 L BNN
+F 4 "Manufacturer recommendations" H 1250 2850 50  0001 L BNN "Field4"
+F 5 "CUI Inc" H 1250 2850 50  0001 L BNN "Field5"
+	1    1250 2850
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 2750 2    50   Input ~ 0
+GND
+Wire Wire Line
+	1550 3650 2200 3650
+$Comp
+L RCJ-012:RCJ-012 J4
+U 1 1 5D961F0F
+P 1250 3550
+F 0 "J4" H 1343 3864 50  0000 C CNN
+F 1 "IN2_R" H 1343 3773 50  0000 C CNN
+F 2 "RCJ-012:CUI_RCJ-012" H 1250 3550 50  0001 L BNN
+F 3 "B" H 1250 3550 50  0001 L BNN
+F 4 "Manufacturer recommendations" H 1250 3550 50  0001 L BNN "Field4"
+F 5 "CUI Inc" H 1250 3550 50  0001 L BNN "Field5"
+	1    1250 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1550 3450 2    50   Input ~ 0
+GND
+Connection ~ 3400 3150
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D966810
+P 4900 1100
+F 0 "#FLG0101" H 4900 1175 50  0001 C CNN
+F 1 "PWR_FLAG" V 4900 1228 50  0000 L CNN
+F 2 "" H 4900 1100 50  0001 C CNN
+F 3 "~" H 4900 1100 50  0001 C CNN
+	1    4900 1100
+	0    1    1    0   
+$EndComp
+Connection ~ 4900 1100
+Wire Wire Line
+	4900 1100 4900 1000
+$EndSCHEMATC
