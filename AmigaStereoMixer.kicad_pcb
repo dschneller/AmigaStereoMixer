@@ -821,7 +821,7 @@
   (gr_text Output (at 31.75 71.882) (layer F.SilkS) (tstamp 5D914C10)
     (effects (font (size 1 1) (thickness 0.2)))
   )
-  (gr_text "Right   Left" (at 28.702 37.846 90) (layer F.SilkS) (tstamp 5D914897)
+  (gr_text "Left   Right" (at 28.702 37.846 90) (layer F.SilkS) (tstamp 5D914897)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text "Left   Right" (at 74.168 38.1 90) (layer F.SilkS) (tstamp 5D914263)
