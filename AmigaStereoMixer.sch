@@ -357,4 +357,37 @@ Text Notes 8300 3100 0    50   ~ 0
 Headphone jack
 Text Notes 9150 6450 0    50   Italic 0
 Inspired by Ms Mad Lemon’s video\nabout the same topic at \nhttps://www.youtube.com/watch?v=cg2SPF7CMwM
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5DA507AD
+P 1000 6800
+F 0 "H1" H 1100 6846 50  0000 L CNN
+F 1 "MountingHole" H 1100 6755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1000 6800 50  0001 C CNN
+F 3 "~" H 1000 6800 50  0001 C CNN
+	1    1000 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5DA51E32
+P 1000 7050
+F 0 "H2" H 1100 7096 50  0000 L CNN
+F 1 "MountingHole" H 1100 7005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1000 7050 50  0001 C CNN
+F 3 "~" H 1000 7050 50  0001 C CNN
+	1    1000 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5DA521CE
+P 1000 7300
+F 0 "H3" H 1100 7346 50  0000 L CNN
+F 1 "MountingHole" H 1100 7255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1000 7300 50  0001 C CNN
+F 3 "~" H 1000 7300 50  0001 C CNN
+	1    1000 7300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
