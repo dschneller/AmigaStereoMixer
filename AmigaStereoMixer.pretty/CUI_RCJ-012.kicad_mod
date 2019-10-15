@@ -1,6 +1,6 @@
-(module CUI_RCJ-012 (layer F.Cu) (tedit 5D90EFF7)
+(module CUI_RCJ-012 (layer F.Cu) (tedit 5DAB3F69)
   (descr "<b>DC POWER JACK</b><p>Source: DCJ0202.pdf")
-  (fp_text reference CUI_RCJ-012 (at 3.302 -6.604) (layer F.SilkS)
+  (fp_text reference CUI_RCJ-012 (at 4.191 4.5212) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify right))
   )
   (fp_text value VAL** (at 3.302 6.604) (layer F.Fab)

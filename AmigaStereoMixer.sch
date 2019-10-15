@@ -1,14 +1,15 @@
 EESchema Schematic File Version 4
+LIBS:AmigaStereoMixer-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Amiga Stereo Mixer"
-Date "2019-09-30"
-Rev "1.0"
+Date "2019-10-20"
+Rev "2.0"
 Comp "https://github.com/dschneller // @dschneller"
-Comment1 ""
+Comment1 "License: CERN Open Hardware Licence v1.2 "
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -19,7 +20,7 @@ U 1 1 5D8D7C9D
 P 5600 2400
 F 0 "R2" V 5393 2400 50  0000 C CNN
 F 1 "10" V 5484 2400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 2400 50  0001 C CNN
+F 2 "AmigaStereoMixer:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 2400 50  0001 C CNN
 F 3 "~" H 5600 2400 50  0001 C CNN
 	1    5600 2400
 	0    1    1    0   
@@ -30,7 +31,7 @@ U 1 1 5D8D833E
 P 5600 4300
 F 0 "R1" V 5393 4300 50  0000 C CNN
 F 1 "10" V 5484 4300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 4300 50  0001 C CNN
+F 2 "AmigaStereoMixer:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 4300 50  0001 C CNN
 F 3 "~" H 5600 4300 50  0001 C CNN
 	1    5600 4300
 	0    1    1    0   
@@ -41,7 +42,7 @@ U 1 1 5D8D8623
 P 5600 3050
 F 0 "R3" V 5393 3050 50  0000 C CNN
 F 1 "10" V 5484 3050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 3050 50  0001 C CNN
+F 2 "AmigaStereoMixer:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 3050 50  0001 C CNN
 F 3 "~" H 5600 3050 50  0001 C CNN
 	1    5600 3050
 	0    1    1    0   
@@ -52,7 +53,7 @@ U 1 1 5D8D8947
 P 5600 4950
 F 0 "R4" V 5393 4950 50  0000 C CNN
 F 1 "10" V 5484 4950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 4950 50  0001 C CNN
+F 2 "AmigaStereoMixer:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5530 4950 50  0001 C CNN
 F 3 "~" H 5600 4950 50  0001 C CNN
 	1    5600 4950
 	0    1    1    0   
@@ -64,7 +65,10 @@ P 6700 3550
 F 0 "RV1" H 6630 3596 50  0000 R CNN
 F 1 "1k" H 6630 3505 50  0000 R CNN
 F 2 "AmigaStereoMixer:Potentiometer_Bourns_3386F_Vertical" H 6700 3550 50  0001 C CNN
-F 3 "~" H 6700 3550 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/3386.pdf" H 6700 3550 50  0001 C CNN
+F 4 "DigiKey" H 6700 3550 50  0001 C CNN "Vendor"
+F 5 "3386F-1-102TLF-ND" H 6700 3550 50  0001 C CNN "Part"
+F 6 "Bourns Inc." H 6700 3550 50  0001 C CNN "Manufacturer"
 	1    6700 3550
 	1    0    0    -1  
 $EndComp
@@ -104,7 +108,7 @@ Wire Wire Line
 Wire Wire Line
 	6700 3150 7000 3150
 Wire Wire Line
-	6700 4000 7000 4000
+	6700 4000 6950 4000
 Wire Wire Line
 	8050 3800 8050 3950
 Wire Wire Line
@@ -117,7 +121,6 @@ Wire Wire Line
 	7700 3150 7700 3400
 Wire Wire Line
 	7700 3400 8050 3400
-NoConn ~ 6850 3550
 $Comp
 L Device:C C1
 U 1 1 5D91D5E8
@@ -191,9 +194,10 @@ P 8550 3600
 F 0 "J5" H 8220 3554 50  0000 R CNN
 F 1 "OUT_TRS" H 8220 3645 50  0000 R CNN
 F 2 "AmigaStereoMixer:CUI_SJ1-3553NG" H 8550 3600 50  0001 L BNN
-F 3 "1.02" H 8550 3600 50  0001 L BNN
-F 4 "Manufacturer recommendation" H 8550 3600 50  0001 L BNN "Field4"
-F 5 "CUI" H 8550 3600 50  0001 L BNN "Field5"
+F 3 "https://www.cui.com/product/resource/digikeypdf/sj1-355xng_series.pdf" H 8550 3600 50  0001 L BNN
+F 4 "CUI Inc" H 8550 3600 50  0001 C CNN "Manufacturer"
+F 5 "CP1-3553NG-ND" H 8550 3600 50  0001 C CNN "Part"
+F 6 "DigiKey" H 8550 3600 50  0001 C CNN "Vendor"
 	1    8550 3600
 	-1   0    0    1   
 $EndComp
@@ -223,9 +227,10 @@ P 4000 4200
 F 0 "J1" H 4093 4514 50  0000 C CNN
 F 1 "IN1_R" H 4093 4423 50  0000 C CNN
 F 2 "AmigaStereoMixer:CUI_RCJ-012" H 4000 4200 50  0001 L BNN
-F 3 "B" H 4000 4200 50  0001 L BNN
-F 4 "Manufacturer recommendations" H 4000 4200 50  0001 L BNN "Field4"
-F 5 "CUI Inc" H 4000 4200 50  0001 L BNN "Field5"
+F 3 "https://www.cui.com/product/resource/digikeypdf/rcj-01x.pdf" H 4000 4200 50  0001 L BNN
+F 4 "CUI Inc" H 4000 4200 50  0001 C CNN "Manufacturer"
+F 5 "CP-1401-ND" H 4000 4200 50  0001 C CNN "Part"
+F 6 "DigiKey" H 4000 4200 50  0001 C CNN "Vendor"
 	1    4000 4200
 	1    0    0    -1  
 $EndComp
@@ -240,9 +245,10 @@ P 4000 2300
 F 0 "J2" H 4093 2614 50  0000 C CNN
 F 1 "IN1_L" H 4093 2523 50  0000 C CNN
 F 2 "AmigaStereoMixer:CUI_RCJ-012" H 4000 2300 50  0001 L BNN
-F 3 "B" H 4000 2300 50  0001 L BNN
-F 4 "Manufacturer recommendations" H 4000 2300 50  0001 L BNN "Field4"
-F 5 "CUI Inc" H 4000 2300 50  0001 L BNN "Field5"
+F 3 "https://www.cui.com/product/resource/digikeypdf/rcj-01x.pdf" H 4000 2300 50  0001 L BNN
+F 4 "CUI Inc" H 4000 2300 50  0001 C CNN "Manufacturer"
+F 5 "CP-1401-ND" H 4000 2300 50  0001 C CNN "Part"
+F 6 "DigiKey" H 4000 2300 50  0001 C CNN "Vendor"
 	1    4000 2300
 	1    0    0    -1  
 $EndComp
@@ -257,9 +263,10 @@ P 4000 2950
 F 0 "J3" H 4093 3264 50  0000 C CNN
 F 1 "IN2_L" H 4093 3173 50  0000 C CNN
 F 2 "AmigaStereoMixer:CUI_RCJ-012" H 4000 2950 50  0001 L BNN
-F 3 "B" H 4000 2950 50  0001 L BNN
-F 4 "Manufacturer recommendations" H 4000 2950 50  0001 L BNN "Field4"
-F 5 "CUI Inc" H 4000 2950 50  0001 L BNN "Field5"
+F 3 "https://www.cui.com/product/resource/digikeypdf/rcj-01x.pdf" H 4000 2950 50  0001 L BNN
+F 4 "CUI Inc" H 4000 2950 50  0001 C CNN "Manufacturer"
+F 5 "CP-1401-ND" H 4000 2950 50  0001 C CNN "Part"
+F 6 "DigiKey" H 4000 2950 50  0001 C CNN "Vendor"
 	1    4000 2950
 	1    0    0    -1  
 $EndComp
@@ -274,9 +281,10 @@ P 4000 4850
 F 0 "J4" H 4093 5164 50  0000 C CNN
 F 1 "IN2_R" H 4093 5073 50  0000 C CNN
 F 2 "AmigaStereoMixer:CUI_RCJ-012" H 4000 4850 50  0001 L BNN
-F 3 "B" H 4000 4850 50  0001 L BNN
-F 4 "Manufacturer recommendations" H 4000 4850 50  0001 L BNN "Field4"
-F 5 "CUI Inc" H 4000 4850 50  0001 L BNN "Field5"
+F 3 "https://www.cui.com/product/resource/digikeypdf/rcj-01x.pdf" H 4000 4850 50  0001 L BNN
+F 4 "CUI Inc" H 4000 4850 50  0001 C CNN "Manufacturer"
+F 5 "CP-1401-ND" H 4000 4850 50  0001 C CNN "Part"
+F 6 "DigiKey" H 4000 4850 50  0001 C CNN "Vendor"
 	1    4000 4850
 	1    0    0    -1  
 $EndComp
@@ -357,37 +365,33 @@ Text Notes 8300 3100 0    50   ~ 0
 Headphone jack
 Text Notes 9150 6450 0    50   Italic 0
 Inspired by Ms Mad Lemon’s video\nabout the same topic at \nhttps://www.youtube.com/watch?v=cg2SPF7CMwM
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5DA507AD
-P 1000 6800
-F 0 "H1" H 1100 6846 50  0000 L CNN
-F 1 "MountingHole" H 1100 6755 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1000 6800 50  0001 C CNN
-F 3 "~" H 1000 6800 50  0001 C CNN
-	1    1000 6800
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	6850 3550 6950 3550
+Wire Wire Line
+	6950 3550 6950 4000
+Connection ~ 6950 4000
+Wire Wire Line
+	6950 4000 7000 4000
 $Comp
 L Mechanical:MountingHole H2
-U 1 1 5DA51E32
-P 1000 7050
-F 0 "H2" H 1100 7096 50  0000 L CNN
-F 1 "MountingHole" H 1100 7005 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1000 7050 50  0001 C CNN
-F 3 "~" H 1000 7050 50  0001 C CNN
-	1    1000 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
 U 1 1 5DA521CE
 P 1000 7300
-F 0 "H3" H 1100 7346 50  0000 L CNN
+F 0 "H2" H 1100 7346 50  0000 L CNN
 F 1 "MountingHole" H 1100 7255 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1000 7300 50  0001 C CNN
 F 3 "~" H 1000 7300 50  0001 C CNN
 	1    1000 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5DA51E32
+P 1000 7050
+F 0 "H1" H 1100 7096 50  0000 L CNN
+F 1 "MountingHole" H 1100 7005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965" H 1000 7050 50  0001 C CNN
+F 3 "~" H 1000 7050 50  0001 C CNN
+	1    1000 7050
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
