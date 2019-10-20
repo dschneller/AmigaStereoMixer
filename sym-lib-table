@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name RCJ-012)(type Legacy)(uri ${KIMYLIBS}/symbols/RCJ-012.lib)(options "")(descr ""))
-  (lib (name SJ1-3553NG)(type Legacy)(uri ${KIMYLIBS}/symbols/SJ1-3553NG.lib)(options "")(descr ""))
+  (lib (name AmigaStereoMixer)(type Legacy)(uri ${KIPRJMOD}/AmigaStereoMixer.lib)(options "")(descr ""))
 )

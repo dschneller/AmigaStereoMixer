@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RCJ-012
+F https://www.cui.com/product/resource/digikeypdf/rcj-01x.pdf
+$ENDCMP
+#
+$CMP SJ1-3553NG
+F https://www.cui.com/product/resource/digikeypdf/sj1-355xng_series.pdf
+$ENDCMP
+#
+#End Doc Library
