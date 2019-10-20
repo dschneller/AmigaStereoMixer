@@ -55,3 +55,6 @@ For the capacitors, I chose Nichicon 47uF 16V 85°C. Make sure they are bipolar.
 
 This is a hobby project and I will not be responsible for any damage that might result from its use! I am neither an audio nor hardware specialist. While I tried to do my best and don't think it is very difficult to build, it is up to you to decide whether you want build one for yourself and dare to connect it to your devices :-)
 
+## License
+
+Licensed under the [CERN Open Hardware License v1.2](cern_ohl_v_1_2.txt).
