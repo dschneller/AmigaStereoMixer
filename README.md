@@ -27,7 +27,8 @@ The initial version was a little bigger and had a missing trace, making the adju
 
 ## How does it work?
 
-There is two sets of input RCA jacks. The second on is completely optional and only there, because Ms Mad Lemon's had it, too. I just used the values she had already tried. The left and right channels of both inputs get mixed together first. They then go through the variable resistor which decides how much of the left channel can bleed through to the right and vice versa.  
+There is two sets of input RCA jacks. The second one is completely optional and only there, because Ms Mad Lemon's had it, too. I just used the resistor and capacitor values she had already tried. I did, however, use bipolar caps instead of pairs of polarized ones back to back.
+The left and right channels of both inputs get mixed together first. They then go through the variable resistor which decides how much of the left channel can bleed through to the right and vice versa.  
 
 Finally, the mixed output goes to a TRS headphone jack.
 
@@ -43,7 +44,7 @@ To get the PCB, you can upload either the KiCad PCB file directly to a manufactu
 
 ### Components
 
-For the capacitors, I chose Nichicon 47uF 16V 85°C. Make sure they are bipolar. The audio jacks for input (RCJ-012) and output (SJ1-3553NG) are from CUI Devices. The trimmer is a Bourns Inc. 3386F-1-102TLF. 10Ω resistors I had flying around from a resistor kit I bought a while ago. I ordered them everything from DigiKey, trying to get the cheapest options.
+For the capacitors, I chose Nichicon 47uF 16V 85°C. Make sure they are bipolar. The audio jacks for input (RCJ-012) and output (SJ1-3553NG) are from CUI Devices. The trimmer is a Bourns Inc. 3386F-1-102TLF. 10Ω resistors I had flying around from a resistor kit I bought a while ago. I ordered them everything from DigiKey, trying to get the cheapest options.
 
 ## Issues
 
