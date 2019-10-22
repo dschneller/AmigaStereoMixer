@@ -50,7 +50,7 @@ For the capacitors, I chose Nichicon 47uF 16V 85°C. Make sure they are bipolar.
 
 * The trimmer I used is a linear 0-1㏀ model. While it works, audible changes in the amount of fading only happen in about the first 20% of a turn. Probably a variable resistor with a non-linear curve would yield better results. 
 
-* I think I will change the 2nd pair of input jacks to an output. That way you would have to use a headphone or another adapter. That's probably more useful than a second input to be mixed in with the Amiga sound.
+* I think I will change the 2nd pair of input jacks to an output. That way you could use a headphone or connect both channels through to some other output device. That's probably more useful than a second input to be mixed in with the Amiga sound.
 
 ## Disclaimer
 
